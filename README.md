@@ -1,40 +1,102 @@
-## ERP System Project
+# Calendar Application for Communication Tracking 📅
 
-This project is a simplified ERP (Enterprise Resource Planning) system designed to manage basic business operations efficiently. It consists of several pages, including the Dashboard, Products Management, and Orders Management.
+## Objective ✨
+This React-based application is designed to help companies efficiently track and manage communications with other organizations. It ensures timely follow-ups, centralized record-keeping of past interactions, and planning of future engagements.
 
-## Objective
+---
 
-The main objective of this project is to develop a user-friendly interface for managing key aspects of a business using React. It aims to implement navigation between different sections of the ERP system using React Router and create a responsive design suitable for both desktop and mobile devices.
+## Features 🚀
+### Admin Module 🛠️
+1. **Company Management**
+   - Add, edit, and delete companies with details like name, location, LinkedIn profile, emails, phone numbers, and comments.
+   - Define default periodicity for scheduled communications.
 
-## Project Structure
+2. **Communication Method Management**
+   - Add communication methods with name, description, sequence, and mandatory flag.
+   - Default methods:
+     - LinkedIn Post 🖋️
+     - LinkedIn Message 💬
+     - Email 📧
+     - Phone Call 📞
+     - Other 🌟
 
-The project structure includes the following files:
+### User Module 👤
+1. **Dashboard**
+   - View companies with their last five communications and next scheduled communication.
+   - Color-coded highlights for overdue (🔴) and due today (🟡) communications.
 
-_App.css_: This file contains the styles for the application.
-_App.js_: The main component that renders different pages of the ERP system.
-_index.css_: The CSS file for the index.html file.
-_index.js_: The entry point of the application.
+2. **Interactive Features**
+   - Hover tooltips for completed communication details.
+   - Modal to log new communication with type, date, and notes.
+   - Notifications for overdue and due communications.
 
-## Pages
+3. **Calendar View** 📆
+   - Visualize past and upcoming communications on a calendar.
 
-_Dashboard_
-Provides an overview of key metrics or features such as the total number of products and orders.
-Includes links or buttons for quick navigation to the Products and Orders management pages.
-_Products Management_
-Presents a list of products with details such as name, category, price, and stock quantity, using mock data.
-Enables functionalities to add, edit, and delete products.
-_Orders Management_
-Shows a list of orders, including details like order ID, customer name, order date, and status, using mock data.
-Optionally allows viewing of order details, updating the order status, and deletion of orders.
-_Development Instructions_
-To run this project locally, follow these steps:
+### Reporting and Analytics Module (Optional) 📊
+- Communication frequency reports.
+- Engagement effectiveness dashboards.
+- Overdue communication trends.
+- Exportable reports (PDF/CSV).
+- Real-time activity log.
 
-_Clone the repository to your local machine._
-Navigate to the project directory.
-Install dependencies using npm install.
-Run the development server using npm start.
-Open your browser and go to http://localhost:3000 to view the application.
+---
 
-## Contributing
+## Setup and Deployment Instructions 🖥️
 
-Contributions to this project are welcome. If you would like to contribute, please fork the repository, make your changes, and submit a pull request.
+### Prerequisites 📋
+- Node.js and npm installed.
+- GitHub account.
+
+### Steps to Run Locally 🏠
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/charitha-duvvuru/Calender
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd Calendar
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+5. Access the application at `http://localhost:3000`.
+
+### Deployment 🌐
+1. Build the project:
+   ```bash
+   npm run build
+   ```
+2. Deploy on a platform like:
+   - **Vercel:** Follow [Vercel deployment guide](https://vercel.com/docs/deploying).
+   - **Netlify:** Follow [Netlify deployment guide](https://docs.netlify.com/).
+   - **GitHub Pages:** Follow [GitHub Pages deployment guide](https://create-react-app.dev/docs/deployment/#github-pages).
+3. Share the live URL.
+https://unitrix.netlify.app/
+---
+
+## Testing and Validation ✅
+- Ensure smooth functionality without errors.
+- Test for performance and usability issues.
+- Include mock data (e.g., sample companies and communication schedules) for evaluation.
+
+---
+
+## Application Functionality 🧩
+- The application provides features like company management, communication tracking, and visual analytics.
+- Color-coded highlights enhance usability.
+
+### Known Limitations ⚠️
+- Reporting and analytics module is optional and may not be fully implemented.
+
+---
+
+## Sample Data 📂
+- Mock companies, communication methods, and schedules are pre-loaded to demonstrate the application's functionality.
+
+---
